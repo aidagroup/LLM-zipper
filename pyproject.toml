@@ -1,0 +1,69 @@
+[project]
+name = "llm-zipper"
+dynamic = ["version"]
+description = "Open-source framework for cheaper, faster, energy-efficient LLMs. Know before you compress."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "The LLM-zipper Authors" }]
+requires-python = ">=3.10"
+keywords = [
+    "llm",
+    "compression",
+    "kv-cache",
+    "tensor-train",
+    "tensor-decomposition",
+    "efficient-inference",
+    "green-ai",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.scripts]
+llm-zipper = "llm_zipper.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/aidagroup/LLM-zipper"
+Repository = "https://github.com/aidagroup/LLM-zipper"
+Issues = "https://github.com/aidagroup/LLM-zipper/issues"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.17", "pre-commit>=4"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/llm_zipper/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_zipper"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/llm_zipper", "tests", "README.md", "LICENSE", "CITATION.cff"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
