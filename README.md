@@ -18,10 +18,10 @@ We are [AIDA](https://github.com/aidagroup) (AI in Dynamic Action), a research g
 Dr. habil. Pavel Osinenko. We work on making large models cheaper and faster to run:
 
 - KV-cache compression
-- tensorization of neural networks
-- efficient fine-tuning
-- retrieval-preserving compression for RAG
-- …and more
+- LLM acceleration
+- memory-efficient RAG
+- RL for adaptive inference
+- fine-tuning, tensorization and more
 
 New LLM-zipper modules arrive together with our papers, so each one brings both the theory and
 working code.
@@ -56,8 +56,8 @@ predicts how compressible a part of the model is, **compress** applies a method,
 | KV-cache compression across layers, heads and context lengths | in development |
 | Theory of LLM tensorizability                                 | planned        |
 | Efficient fine-tuning                                         | planned        |
-| Retrieval-preserving compression for RAG                      | planned        |
-| Adaptive compression policies                                 | planned        |
+| Memory-efficient RAG                                          | planned        |
+| RL for adaptive inference                                     | planned        |
 
 ## Development
 
