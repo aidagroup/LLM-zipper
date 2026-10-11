@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use LLM-zipper in your research, please cite it as below."
+type: software
+title: "LLM-zipper: know before you compress"
+abstract: >-
+  An open-source framework for cheaper, faster, energy-efficient LLMs that predicts how much
+  a model can be compressed, and at what quality cost, before compressing it.
+authors:
+  - name: "The LLM-zipper Authors"
+repository-code: "https://github.com/aidagroup/LLM-zipper"
+url: "https://pypi.org/project/llm-zipper/"
+license: Apache-2.0
+keywords:
+  - llm
+  - compression
+  - kv-cache
+  - tensor-train
+  - efficient-inference
