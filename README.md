@@ -34,10 +34,6 @@ working code.
   <sub>Our goal: take LLMs from data-center scale down to a rig you can run at home.</sub>
 </p>
 
-> [!NOTE]
-> **Pre-alpha.** This release sets up the project. The first module, KV-cache compression,
-> is in development, and the API is not public yet.
-
 ## Install
 
 ```bash
@@ -54,10 +50,10 @@ predicts how compressible a part of the model is, **compress** applies a method,
 | Module                                                        | Status         |
 | ------------------------------------------------------------- | -------------- |
 | KV-cache compression across layers, heads and context lengths | in development |
-| Theory of LLM tensorizability                                 | planned        |
-| Efficient fine-tuning                                         | planned        |
-| Memory-efficient RAG                                          | planned        |
-| RL for adaptive inference                                     | planned        |
+| Theory of LLM tensorizability                                 | in development |
+| Efficient fine-tuning                                         | in development |
+| Memory-efficient RAG                                          | in development |
+| RL for adaptive inference                                     | in development |
 
 ## Development
 
